@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macro-pilot"
+version = "0.1.0"
+description = "Controlled recipe benchmark for single and specialist AG2 judges"
+requires-python = ">=3.11"
+dependencies = ["autogen[openai]==0.14.1", "openai==2.44.0", "pydantic==2.13.5"]
+
+[project.scripts]
+macro = "macro.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

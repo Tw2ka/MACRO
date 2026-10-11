@@ -1,0 +1,4 @@
+# AG2 Classic, imported as autogen. Do not replace with Microsoft's pyautogen.
+autogen[openai]==0.14.1
+openai==2.44.0
+pydantic==2.13.5
