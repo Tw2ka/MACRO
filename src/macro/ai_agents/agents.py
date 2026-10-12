@@ -1,8 +1,8 @@
 """AG2 agent setup and paid provider adapter. Imports never initialize a model."""
 import json
-import os
 import time
 
+from macro.shared.config import openai_api_key
 from .prompts import prompt
 from .schemas import SCHEMA_VERSION, response_schema, validate_assessment
 from .tools import calculate
@@ -28,9 +28,7 @@ class LiveProvider:
 
     def assess(self, role, evidence, tag, feedback=None):
         self.recorder.reserve(self.config["max_tool_rounds"] + 1)
-        key = os.getenv("OPENAI_API_KEY")
-        if not key:
-            raise ValueError("OPENAI_API_KEY is missing; set it in your terminal environment")
+        key = openai_api_key()
         # New agent and message history for every role/case/order/attempt.
         agent = make_agent(role, self.config, key, evidence)
         system, user = prompt(role, evidence)
