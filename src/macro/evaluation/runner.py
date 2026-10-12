@@ -1,11 +1,11 @@
 import json
-import os
 import time
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
 from macro.shared.io import digest, file_hash, read_json, read_jsonl, write_json, write_jsonl
+from macro.shared.config import openai_api_key
 from macro.ai_agents.agents import LiveProvider
 from macro.coordinator.aggregation import AGGREGATION_VERSION, aggregate
 from macro.reporting.summary import summarize
@@ -66,8 +66,7 @@ def experiment_plan(folder, limit, config):
 
 def run(folder, config, limit=20, run_id=None, max_calls=240, retry_uncertain=False):
     """Run real AG2 judges. Test fixtures are supplied only through the private runner."""
-    if not os.getenv("OPENAI_API_KEY"):
-        raise ValueError("OPENAI_API_KEY is missing; set it in your terminal environment")
+    openai_api_key()
     return _run(folder, config, lambda recorder: LiveProvider(config, recorder), "live",
                 limit, run_id, max_calls, retry_uncertain)
 

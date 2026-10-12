@@ -25,13 +25,19 @@ The prepared cases are in `data/pilot/`; you do not need to download the origina
 
 ## 2. Set your API key
 
-In the same PowerShell terminal, replace the placeholder with your OpenAI API key:
+Copy `.env.example` to `.env` in the project folder:
 
 ```powershell
-$env:OPENAI_API_KEY = "your-api-key"
+Copy-Item .env.example .env
 ```
 
-The application does not automatically read `.env` files. The model and other settings are in [configs/pilot.json](configs/pilot.json); the current model is `gpt-5-nano`.
+Edit `.env` and replace `your-api-key` with your OpenAI API key:
+
+```dotenv
+OPENAI_API_KEY=your-api-key
+```
+
+Run commands from the project folder so the application can read `.env`. Its key takes precedence over `OPENAI_API_KEY` in the terminal environment, which remains a fallback. `.env` is excluded from Git. The model and other settings are in [configs/pilot.json](configs/pilot.json); the current model is `gpt-5-nano`.
 
 ## 3. Try one case
 

@@ -2,3 +2,4 @@
 autogen[openai]==0.14.1
 openai==2.44.0
 pydantic==2.13.5
+python-dotenv==1.2.4
