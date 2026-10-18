@@ -1,0 +1,174 @@
+{
+  "version": "benchmark-v1",
+  "generator_version": "benchmark-generator-v1",
+  "policy_version": "benchmark-policy-v1",
+  "status": "draft_not_frozen",
+  "subset_sha256": "443666b0ada03218784b51419bf4f2e3561a8990b1513b68ca387f4e2260bb76",
+  "subset_source_sha256": "795fda95e2dac442a1f5a211a2fce9ab7f6a21ad11cb35babd2f8e3580bdd1e6",
+  "subset_manual_review": "pending",
+  "pilot_cases_sha256": "478943cae2358234bd680596268d36f829514a307842eed88903f22a28155871",
+  "excluded_pilot_recipe_ids": [
+    "107324",
+    "113066",
+    "152538",
+    "169003",
+    "180463",
+    "197074",
+    "222866",
+    "242109",
+    "247766",
+    "249171",
+    "276027",
+    "289868",
+    "297069",
+    "305021",
+    "307401",
+    "326697",
+    "33135",
+    "343081",
+    "372822",
+    "375892",
+    "382909",
+    "391978",
+    "399173",
+    "415303",
+    "444794",
+    "473994",
+    "484719",
+    "488500",
+    "500402",
+    "50245",
+    "502798",
+    "503578",
+    "511674",
+    "518558",
+    "65559",
+    "7477",
+    "77959",
+    "85774",
+    "8631",
+    "86656"
+  ],
+  "config_sha256": "6d30a171faceceaad4557993e993d79b62958c39f7d1eab28a3df79647a1b3b9",
+  "generator_code_sha256": "c406290fc246c1a1b48c703432502bc10a812420b50f592007c91819c1e5b4bc",
+  "policy_code_sha256": "ed6ad2781fb51add81751569a2366e6a1226ecc914d78d5512c60484121e9717",
+  "hashes": {
+    "dev/cases.jsonl": "3c0f4c0a0a6b37194e111f57d43d5727c8b02675e813446301c0421daa518195",
+    "private/dev.references.jsonl": "aff17aed388a04063feb37f9d7ba581185b5a4cb0ed0632fecdfbf284c7c6645",
+    "test/cases.jsonl": "d12577c1a3a8ef9726c101b343a39e416c12c5de5003efde7828fc3651bc6316",
+    "private/test.references.jsonl": "7b4a25205068060a880480b6a3a32bd956c49445268cddedf48d148513139937",
+    "private/source_map.json": "221ed006ac54771906fd8fef35ddf223128c53763df2e91b326db7d4cfffbd51"
+  },
+  "selection_attempts": {
+    "control_tie": 475,
+    "both_violate": 38,
+    "constraint_ingredient": 128,
+    "constraint_duration_near": 366,
+    "constraint_duration_clear": 90,
+    "dominance_near": 2567,
+    "dominance_clear": 577,
+    "tradeoff_resolved": 462,
+    "tradeoff_unresolved": 806
+  },
+  "rejections": {
+    "control_tie:relationship_or_margin": 431,
+    "control_tie:duplicate_profile": 8,
+    "both_violate:duplicate_profile": 2,
+    "constraint_ingredient:relationship_or_margin": 16,
+    "constraint_ingredient:duplicate_profile": 4,
+    "constraint_duration_near:relationship_or_margin": 311,
+    "constraint_duration_near:duplicate_profile": 1,
+    "constraint_duration_clear:relationship_or_margin": 28,
+    "constraint_duration_clear:duplicate_profile": 8,
+    "dominance_near:relationship_or_margin": 2380,
+    "dominance_near:duplicate_profile": 79,
+    "dominance_clear:relationship_or_margin": 371,
+    "dominance_clear:duplicate_profile": 98,
+    "tradeoff_resolved:relationship_or_margin": 285,
+    "tradeoff_resolved:duplicate_profile": 69,
+    "tradeoff_unresolved:relationship_or_margin": 533,
+    "tradeoff_unresolved:duplicate_profile": 165
+  },
+  "splits": {
+    "dev": {
+      "base_cases": 120,
+      "strata": {
+        "tradeoff_resolved": 18,
+        "control_tie": 6,
+        "dominance_near": 18,
+        "dominance_clear": 18,
+        "constraint_ingredient": 18,
+        "constraint_duration_clear": 9,
+        "tradeoff_unresolved": 18,
+        "constraint_duration_near": 9,
+        "both_violate": 6
+      },
+      "case_types": {
+        "tradeoff": 36,
+        "control_tie": 6,
+        "dominance": 36,
+        "constraint": 36,
+        "both_violate": 6
+      },
+      "reference_verdicts": {
+        "A": 46,
+        "tie": 6,
+        "B": 44,
+        "insufficient_information": 18,
+        "both_violate": 6
+      },
+      "active_objectives": {
+        "preference+nutrition": 57,
+        "preference+nutrition+speed": 63
+      },
+      "recipes": 240
+    },
+    "test": {
+      "base_cases": 600,
+      "strata": {
+        "dominance_clear": 90,
+        "tradeoff_resolved": 90,
+        "constraint_ingredient": 90,
+        "tradeoff_unresolved": 90,
+        "constraint_duration_clear": 45,
+        "dominance_near": 90,
+        "both_violate": 30,
+        "constraint_duration_near": 45,
+        "control_tie": 30
+      },
+      "case_types": {
+        "dominance": 180,
+        "tradeoff": 180,
+        "constraint": 180,
+        "both_violate": 30,
+        "control_tie": 30
+      },
+      "reference_verdicts": {
+        "B": 225,
+        "A": 225,
+        "insufficient_information": 90,
+        "both_violate": 30,
+        "tie": 30
+      },
+      "active_objectives": {
+        "preference+nutrition": 292,
+        "preference+nutrition+speed": 308
+      },
+      "recipes": 1200
+    }
+  },
+  "validation": {
+    "policy_labels_recomputed": true,
+    "order_swap_reference_checks": true,
+    "factual_template_checks": true,
+    "recipe_overlap": 0,
+    "profile_overlap": 0,
+    "case_overlap": 0,
+    "manual_review": "pending",
+    "explanation_length_leakage_check": "pending",
+    "surface_classifier_check": "pending"
+  },
+  "variants": "concise factual base only; four-variant package pending",
+  "split_inheritance": "All future variants and A/B orders inherit the base case split",
+  "execution": "No LLM calls; current historical pilot runner is not compatible with this policy/schema"
+}

@@ -1,0 +1,505 @@
+{
+  "note": "Top 100 first-failure details, not an exhaustive ingredient vocabulary or manual review record.",
+  "items": [
+    {
+      "reason": "missing_or_invalid_numeric",
+      "source_text_or_field": "fsa_score",
+      "count": 14570
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "garlic powder",
+      "count": 8079
+    },
+    {
+      "reason": "missing_or_invalid_numeric",
+      "source_text_or_field": "duration",
+      "count": 7338
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "tomato sauce",
+      "count": 3618
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "tomato paste",
+      "count": 2636
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "cream of mushroom soup",
+      "count": 2183
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "garlic salt",
+      "count": 2128
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "onion powder",
+      "count": 1999
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "cloves garlic, minced",
+      "count": 1991
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "$template2$",
+      "count": 1507
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onions, chopped",
+      "count": 1398
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 2 tablespoons $template2$",
+      "count": 1085
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1/2 cup $template2$",
+      "count": 965
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "olive oil, divided",
+      "count": 961
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onion, chopped",
+      "count": 929
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "chopped green onion",
+      "count": 871
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "clove garlic, minced",
+      "count": 867
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "crushed tomatoes",
+      "count": 798
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1/4 cup $template2$",
+      "count": 787
+    },
+    {
+      "reason": "malformed_ingredient",
+      "source_text_or_field": "each)",
+      "count": 695
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onions, sliced",
+      "count": 651
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "tomato juice",
+      "count": 626
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "tomato puree",
+      "count": 603
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1 tablespoon $template2$",
+      "count": 593
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "stewed tomatoes",
+      "count": 585
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "extra-virgin olive oil",
+      "count": 582
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "tomato soup",
+      "count": 559
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "cloves garlic",
+      "count": 556
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "cherry tomatoes, halved",
+      "count": 510
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "sliced green onion",
+      "count": 484
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onions",
+      "count": 480
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "dried onion flakes",
+      "count": 463
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 3 tablespoons $template2$",
+      "count": 460
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1/2 cup $template2$, softened",
+      "count": 455
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "shredded carrot",
+      "count": 446
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "cloves garlic, crushed",
+      "count": 437
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "diced tomatoes, undrained",
+      "count": 428
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onions, thinly sliced",
+      "count": 406
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onion, sliced",
+      "count": 395
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "carrot, shredded",
+      "count": 381
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1 cup $template2$",
+      "count": 346
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "cloves garlic, chopped",
+      "count": 325
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onions, finely chopped",
+      "count": 325
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "condensed cream of mushroom soup",
+      "count": 319
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1 cup $template2$, softened",
+      "count": 317
+    },
+    {
+      "reason": "malformed_ingredient",
+      "source_text_or_field": "total)",
+      "count": 303
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "chopped green onions",
+      "count": 299
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "garlic cloves, pressed",
+      "count": 294
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1/2 cup $template2$, melted",
+      "count": 289
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onion",
+      "count": 288
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "grated carrot",
+      "count": 281
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "onion salt",
+      "count": 280
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1/4 cup $template2$, melted",
+      "count": 277
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "extra virgin olive oil, divided",
+      "count": 270
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "clove garlic, crushed",
+      "count": 267
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "condensed tomato soup",
+      "count": 260
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "baby spinach leaves",
+      "count": 255
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "clove garlic",
+      "count": 251
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "grated carrots",
+      "count": 248
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "light olive oil",
+      "count": 247
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "bunch green onion, chopped",
+      "count": 245
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onion, finely chopped",
+      "count": 239
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "slices tomatoes",
+      "count": 238
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "instant minced onion",
+      "count": 232
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "broccoli floret",
+      "count": 230
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "carrots, shredded",
+      "count": 224
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "crushed garlic",
+      "count": 224
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "onion, chopped fine",
+      "count": 220
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "ground beef or 1 lb $template2$",
+      "count": 215
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "salt (or to taste)",
+      "count": 213
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "grated onion",
+      "count": 211
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "garlic cloves, smashed",
+      "count": 208
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onion, thinly sliced",
+      "count": 205
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "eggs (or as called for by your cake mix)",
+      "count": 205
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "garlic paste",
+      "count": 202
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "granulated garlic",
+      "count": 199
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "shredded carrots",
+      "count": 198
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "head garlic",
+      "count": 194
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "grape tomatoes, halved",
+      "count": 193
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "tomato ketchup",
+      "count": 187
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "thinly sliced green onion",
+      "count": 186
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 2 tablespoons $template2$, melted",
+      "count": 185
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onions, minced",
+      "count": 183
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "diced tomatoes with juice",
+      "count": 183
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "cloves garlic, finely chopped",
+      "count": 179
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 3/4 cup $template2$",
+      "count": 178
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1/3 cup $template2$",
+      "count": 172
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "dash garlic powder",
+      "count": 171
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "margarine or 1/2 cup $template2$",
+      "count": 171
+    },
+    {
+      "reason": "unresolved_ingredient_note",
+      "source_text_or_field": "garlic clove, pressed",
+      "count": 170
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "green onion, minced",
+      "count": 168
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 4 tablespoons $template2$",
+      "count": 166
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "Simply Potatoes Diced Potatoes with Onion",
+      "count": 165
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "bunch green onion",
+      "count": 161
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "Rotel Tomatoes",
+      "count": 158
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "envelope onion soup mix",
+      "count": 157
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "ginger-garlic paste",
+      "count": 157
+    },
+    {
+      "reason": "ambiguous_ingredient",
+      "source_text_or_field": "butter or 1/4 cup $template2$, softened",
+      "count": 154
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "package Simply Potatoes Diced Potatoes with Onion",
+      "count": 149
+    },
+    {
+      "reason": "unmapped_tracked_ingredient",
+      "source_text_or_field": "sweet onion, chopped",
+      "count": 149
+    }
+  ]
+}
