@@ -1,0 +1,11 @@
+{
+  "policy_labels_recomputed": true,
+  "order_swap_reference_checks": true,
+  "factual_template_checks": true,
+  "recipe_overlap": 0,
+  "profile_overlap": 0,
+  "case_overlap": 0,
+  "manual_review": "pending",
+  "explanation_length_leakage_check": "pending",
+  "surface_classifier_check": "pending"
+}

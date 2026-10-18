@@ -1,0 +1,158 @@
+{
+  "schema_version": "dataset-v1",
+  "source_file": "C:\\Users\\shane\\Documents\\NLP\\group_project\\pp_recipes\\pp_recipes.csv",
+  "source_sha256": "795fda95e2dac442a1f5a211a2fce9ab7f6a21ad11cb35babd2f8e3580bdd1e6",
+  "source_bytes": 1137469414,
+  "source_rows": 507335,
+  "eligible_rows": 47887,
+  "selected_rows": 5000,
+  "first_exclusion_reason_counts": {
+    "no_tracked_ingredient": 149509,
+    "ambiguous_ingredient": 110269,
+    "duration_outside_bounds": 33163,
+    "unmapped_tracked_ingredient": 74829,
+    "unresolved_ingredient_note": 56349,
+    "missing_or_invalid_numeric": 21908,
+    "malformed_ingredient": 11641,
+    "zero_energy": 1604,
+    "inconsistent_nutrient_components": 129,
+    "missing_identity": 38,
+    "invalid_ingredients_structure": 4,
+    "known_incomplete_ingredient_record": 5
+  },
+  "distributions": {
+    "duration_minutes": {
+      "count": 5000,
+      "min": 1.0,
+      "p25": 23.0,
+      "median": 38.0,
+      "p75": 60.0,
+      "max": 180.0
+    },
+    "nutrition_score": {
+      "count": 5000,
+      "min": 0.0,
+      "p25": 0.25,
+      "median": 0.5,
+      "p75": 0.625,
+      "max": 1.0
+    },
+    "serving_size_g": {
+      "count": 5000,
+      "min": 1.0,
+      "p25": 153.0,
+      "median": 239.0,
+      "p75": 357.0,
+      "max": 5753.0
+    },
+    "nutrients": {
+      "energy_source_cal": {
+        "count": 5000,
+        "min": 0.2,
+        "p25": 197.3,
+        "median": 331.2,
+        "p75": 519.8,
+        "max": 7390.0
+      },
+      "energy_from_fat_source_cal": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 64.0,
+        "median": 142.0,
+        "p75": 257.0,
+        "max": 6737.0
+      },
+      "fat_g": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 7.1,
+        "median": 15.8,
+        "p75": 28.6,
+        "max": 748.6
+      },
+      "saturated_fat_g": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 1.7,
+        "median": 5.1,
+        "p75": 10.8,
+        "max": 267.4
+      },
+      "cholesterol_mg": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 7.3,
+        "median": 55.7,
+        "p75": 118.2,
+        "max": 2337.3
+      },
+      "sodium_mg": {
+        "count": 5000,
+        "min": 0.1,
+        "p25": 206.9,
+        "median": 484.2,
+        "p75": 877.4,
+        "max": 85007.9
+      },
+      "carbohydrate_g": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 10.2,
+        "median": 22.9,
+        "p75": 43.7,
+        "max": 691.8
+      },
+      "fiber_g": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 1.1,
+        "median": 2.5,
+        "p75": 5.1,
+        "max": 153.1
+      },
+      "sugars_g": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 1.9,
+        "median": 3.9,
+        "p75": 7.8,
+        "max": 513.9
+      },
+      "protein_g": {
+        "count": 5000,
+        "min": 0.0,
+        "p25": 5.9,
+        "median": 15.5,
+        "p75": 29.2,
+        "max": 725.0
+      }
+    },
+    "ingredient_group_recipe_counts": {
+      "broccoli": 106,
+      "carrot": 494,
+      "garlic": 2321,
+      "mushroom": 399,
+      "olive": 124,
+      "onion": 3087,
+      "spinach": 156,
+      "tomato": 792
+    },
+    "score_recipe_counts": {
+      "0.0": 98,
+      "0.125": 123,
+      "0.25": 1565,
+      "0.375": 644,
+      "0.5": 792,
+      "0.625": 566,
+      "0.75": 800,
+      "0.875": 217,
+      "1.0": 195
+    }
+  },
+  "recipes_sha256": "443666b0ada03218784b51419bf4f2e3561a8990b1513b68ca387f4e2260bb76",
+  "config_sha256": "e12c7ff5cd5fc924b6392c86c2ff9ee55ddc1b6f55c419871a785ba25bf5cc43",
+  "preparation_code_sha256": "e8282e303313aa141cc835f1b49afb44a5b38dd92a3c39f515a73647ddf6ca1e",
+  "manual_review_status": "pending",
+  "benchmark_freeze_status": "not_frozen",
+  "provenance_limit": "Local CSV hashed; upstream byte identity is not established."
+}

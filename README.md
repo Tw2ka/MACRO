@@ -95,7 +95,35 @@ To rebuild reports from an existing run **without making API calls**:
 .\.venv\Scripts\python.exe -m macro summarize results/live-pilot-03
 ```
 
+## Prepare the larger recipe subset
+
+The separate Phase 1 pipeline builds a versioned 5,000-recipe subset without changing
+the historical pilot. Read [DATA_PREPARATION.md](DATA_PREPARATION.md) for the attribute
+contract, filtering and ingredient-mapping limits. From this folder:
+
+```powershell
+.\venv\Scripts\python.exe -m macro.evaluate_case_generation.dataset --source ../pp_recipes/pp_recipes.csv --config configs/dataset-v1.json --out data/subset-v1
+```
+
+Use your environment's Python path if it differs. The command refuses to overwrite an
+existing output folder. It creates recipes, an audit, distributions and a datasheet;
+manual review and benchmark construction remain separate steps.
+
 ## Where to find the code
+
+The new-policy benchmark is generated separately from the 20-case pilot:
+
+```powershell
+.\venv\Scripts\python.exe -m macro.evaluate_case_generation.benchmark
+.\venv\Scripts\python.exe -m macro.evaluate_case_generation.benchmark --verify-only
+```
+
+The defaults create **120 development cases and 600 final test cases** under
+`data/benchmark-v1/`, using `configs/benchmark-v1.json` and
+[EVALUATION_POLICY.md](EVALUATION_POLICY.md). Read the generated benchmark README
+for coverage and pending reviews. Gold references and source mappings are in its
+`private/` folder; only the split's `cases.jsonl` belongs in judge input.
+The historical pilot judge prompts/runner do not yet support this new profile schema.
 
 | Folder inside `src/macro/` | Purpose |
 |---|---|

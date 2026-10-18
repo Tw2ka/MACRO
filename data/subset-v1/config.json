@@ -1,0 +1,91 @@
+{
+  "version": "dataset-v1",
+  "seed": 20261017,
+  "subset_size": 5000,
+  "duration_minutes": {
+    "min": 1,
+    "max": 180
+  },
+  "rounding_tolerance_g": 0.5,
+  "mass_tolerance_fraction": 0.05,
+  "mass_tolerance_g": 2.0,
+  "excluded_recipe_ids": [
+    "316649",
+    "105155",
+    "165047",
+    "14244",
+    "364758"
+  ],
+  "normalization": {
+    "version": "ingredient-groups-v1",
+    "aliases": {
+      "tomato": [
+        "tomato",
+        "tomatoes",
+        "cherry tomatoes",
+        "grape tomatoes",
+        "plum tomatoes",
+        "roma tomatoes"
+      ],
+      "broccoli": [
+        "broccoli",
+        "broccoli florets",
+        "fresh broccoli",
+        "frozen broccoli"
+      ],
+      "spinach": [
+        "spinach",
+        "fresh spinach",
+        "baby spinach",
+        "frozen spinach",
+        "frozen chopped spinach"
+      ],
+      "mushroom": [
+        "mushroom",
+        "mushrooms",
+        "fresh mushrooms",
+        "button mushrooms",
+        "white mushrooms",
+        "sliced mushrooms",
+        "cremini mushrooms"
+      ],
+      "onion": [
+        "onion",
+        "onions",
+        "white onion",
+        "white onions",
+        "yellow onion",
+        "yellow onions",
+        "red onion",
+        "red onions"
+      ],
+      "garlic": [
+        "garlic",
+        "garlic clove",
+        "garlic cloves",
+        "fresh garlic",
+        "minced garlic"
+      ],
+      "carrot": [
+        "carrot",
+        "carrots",
+        "baby carrots",
+        "fresh carrots"
+      ],
+      "olive": [
+        "olive",
+        "olives",
+        "black olives",
+        "green olives",
+        "kalamata olives",
+        "pitted black olives",
+        "pitted green olives"
+      ]
+    },
+    "non_matches": [
+      "olive oil",
+      "extra virgin olive oil",
+      "virgin olive oil"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "benchmark-v1",
+  "policy_version": "benchmark-policy-v1",
+  "seed": 20261018,
+  "max_attempts_per_case": 50000,
+  "exclude_pilot_recipes": true,
+  "strata": {
+    "control_tie": {"dev": 6, "test": 30},
+    "both_violate": {"dev": 6, "test": 30},
+    "constraint_ingredient": {"dev": 18, "test": 90},
+    "constraint_duration_near": {"dev": 9, "test": 45},
+    "constraint_duration_clear": {"dev": 9, "test": 45},
+    "dominance_near": {"dev": 18, "test": 90},
+    "dominance_clear": {"dev": 18, "test": 90},
+    "tradeoff_resolved": {"dev": 18, "test": 90},
+    "tradeoff_unresolved": {"dev": 18, "test": 90}
+  }
+}
