@@ -1,6 +1,6 @@
 # Evaluation policy: benchmark-policy-v1
 
-Defined 18 October 2026 for the new benchmark. The agreed allocation is 600 final-test base cases plus 120 separate development cases (720 total), superseding the earlier suggestion of splitting 600 total cases. This is an initial scoped specification with executable references in `src/macro/shared/benchmark_policy.py`. It does not modify the historical `pilot-v1` policy or existing judge prompts. New judge prompts and runner must explicitly adopt this version before evaluation. No new benchmark freeze or judge results are claimed here.
+Defined 18 October 2026 for the new benchmark. The allocation was revised on 19 October 2026 to **400 final-test base cases plus 120 separate development cases (520 total)**, with equal coverage of the five case categories (80 test and 24 dev each). This supersedes the earlier 600-test-case draft, which is retained as benchmark-v1. Counts change the benchmark configuration, not these decision rules. This is an initial scoped specification with executable references in `src/macro/shared/benchmark_policy.py`. It does not modify the historical `pilot-v1` policy or existing judge prompts. New judge prompts and runner must explicitly adopt this version before evaluation. No new benchmark freeze or judge results are claimed here.
 
 ## 1. Evaluation target and source of truth
 

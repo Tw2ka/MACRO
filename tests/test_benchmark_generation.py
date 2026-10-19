@@ -10,7 +10,7 @@ from macro.shared.io import digest, file_hash, read_jsonl, write_json, write_jso
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONFIG = json.loads((ROOT / "configs/benchmark-v1.json").read_text(encoding="utf-8"))
+CONFIG = json.loads((ROOT / "configs/benchmark-v2.json").read_text(encoding="utf-8"))
 
 
 class BenchmarkGenerationTests(unittest.TestCase):
@@ -87,10 +87,18 @@ class BenchmarkGenerationTests(unittest.TestCase):
         same["priorities"].reverse()
         self.assertNotEqual(profile_identity(profile), profile_identity(same))
 
-    def test_project_configuration_reserves_600_final_cases(self):
-        self.assertEqual(sum(v["test"] for v in CONFIG["strata"].values()), 600)
+    def test_project_configuration_balances_400_final_cases(self):
+        self.assertEqual(sum(v["test"] for v in CONFIG["strata"].values()), 400)
         self.assertEqual(sum(v["dev"] for v in CONFIG["strata"].values()), 120)
         self.assertEqual(CONFIG["policy_version"], POLICY_VERSION)
+        categories = {
+            "constraint": ["constraint_ingredient", "constraint_duration_near", "constraint_duration_clear"],
+            "dominance": ["dominance_near", "dominance_clear"],
+            "tradeoff": ["tradeoff_resolved", "tradeoff_unresolved"],
+            "control_tie": ["control_tie"], "both_violate": ["both_violate"]}
+        for strata in categories.values():
+            self.assertEqual(sum(CONFIG["strata"][s]["test"] for s in strata), 80)
+            self.assertEqual(sum(CONFIG["strata"][s]["dev"] for s in strata), 24)
 
 
 if __name__ == "__main__":

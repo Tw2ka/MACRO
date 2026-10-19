@@ -1,6 +1,6 @@
 # Phase 1: recipe attributes and preparation
 
-This is the first version of the data contract for the benchmark. On 18 October 2026 the allocation was clarified as **600 final-test base cases plus 120 separate development cases**, rather than splitting 600 total cases. Recipe preparation itself makes no judge calls and generates no case labels; the separate benchmark generator constructs cases and assigns these splits.
+This is the first version of the data contract for the benchmark. The current allocation, revised 19 October 2026, is **400 final-test base cases plus 120 separate development cases**, balanced across five case categories. This supersedes the previous 600-final-case allocation without changing the 5,000-recipe subset. Recipe preparation itself makes no judge calls and generates no case labels; the separate benchmark generator constructs cases and assigns these splits.
 
 ## Attribute decisions
 
@@ -58,7 +58,7 @@ The command refuses an existing output directory, refuses fewer than 5,000 eligi
 
 Automated validation and manual validation are separate. The generated subset remains marked **manual review pending** and **not frozen**. Retain the old `data/subset/` and `data/pilot/` for historical experiments. The 20-case pilot generator is intentionally not modified by this phase.
 
-## Next steps before 600-case generation
+## Review and benchmark preparation
 
 ### First full run, 17 October 2026
 
