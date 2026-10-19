@@ -9,7 +9,7 @@ from pathlib import Path
 from macro.shared.benchmark_policy import GROUPS, POLICY_VERSION, evaluate_case, validate_recipe
 from macro.shared.io import digest, file_hash, read_json, read_jsonl, write_json, write_jsonl
 
-GENERATOR_VERSION = "benchmark-generator-v1"
+GENERATOR_VERSION = "benchmark-generator-v2"
 STRATA = frozenset(["control_tie", "both_violate", "constraint_ingredient",
                    "constraint_duration_near", "constraint_duration_clear", "dominance_near",
                    "dominance_clear", "tradeoff_resolved", "tradeoff_unresolved"])
@@ -279,7 +279,7 @@ def generate(subset, out, config, pilot=None):
     write_json(out / "manifest.json", manifest)
     write_json(out / "validation.json", validation)
     lines = ["# Draft development and final-evaluation benchmark", "",
-             "120 development cases and 600 final test cases are the default configuration. See the manifest for actual counts.", "",
+             f"{len(cases_by_split['dev'])} development cases and {len(cases_by_split['test'])} final test cases. Counts are configured independently.", "",
              "| Stratum | Development | Final test |", "|---|---:|---:|"]
     for stratum, counts in config["strata"].items():
         lines.append(f"| {stratum} | {counts['dev']} | {counts['test']} |")
@@ -317,8 +317,8 @@ def verify_saved(out):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--subset", default="data/subset-v1")
-    parser.add_argument("--out", default="data/benchmark-v1")
-    parser.add_argument("--config", default="configs/benchmark-v1.json")
+    parser.add_argument("--out", default="data/benchmark-v2")
+    parser.add_argument("--config", default="configs/benchmark-v2.json")
     parser.add_argument("--pilot", default="data/pilot/cases.jsonl")
     parser.add_argument("--verify-only", action="store_true")
     args = parser.parse_args()

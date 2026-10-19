@@ -118,12 +118,15 @@ The new-policy benchmark is generated separately from the 20-case pilot:
 .\venv\Scripts\python.exe -m macro.evaluate_case_generation.benchmark --verify-only
 ```
 
-The defaults create **120 development cases and 600 final test cases** under
-`data/benchmark-v1/`, using `configs/benchmark-v1.json` and
+The defaults create **120 development cases and 400 final test cases** under
+`data/benchmark-v2/`, using `configs/benchmark-v2.json` and
 [EVALUATION_POLICY.md](EVALUATION_POLICY.md). Read the generated benchmark README
 for coverage and pending reviews. Gold references and source mappings are in its
 `private/` folder; only the split's `cases.jsonl` belongs in judge input.
 The historical pilot judge prompts/runner do not yet support this new profile schema.
+Each of the five case categories has 24 development and 80 final-test cases. Category
+balance is distinct from verdict-label balance. The earlier 600-test-case draft remains
+in `data/benchmark-v1/` for provenance; do not combine versions for evaluation.
 
 | Folder inside `src/macro/` | Purpose |
 |---|---|
